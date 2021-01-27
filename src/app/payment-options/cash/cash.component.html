@@ -1,0 +1,48 @@
+<div class="container">
+    <mat-accordion>
+        <div class="row mt-4 mb-4">
+            <div class="col-12 custom-padding">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Program Settings 
+                        </mat-panel-title>                    
+                    </mat-expansion-panel-header>
+            
+                    <div class="row">
+                        <div class="col-6">
+                            <p>
+                                <span class="badge bg-success">New</span>
+                              </p>
+                              
+                            <p>
+                                <mat-checkbox [(ngModel)]="checked1" color="primary">Active </mat-checkbox>
+                            </p>
+                    
+                          <h4>Incentive Handling</h4>
+                          <p>
+                            <mat-checkbox [(ngModel)]="checked2" color="primary">Include default incentives in payment calculation </mat-checkbox>
+                        </p>
+                        </div>
+                      
+                        <div class="col-6">
+                            <p>
+                                <span class="badge bg-warning">Used</span>
+                            </p>
+                            <p>
+                                <mat-checkbox [(ngModel)]="checked3" color="primary">Active </mat-checkbox>
+                            </p>
+                            <h4>Incentive Handling</h4>
+                            <p>
+                                <mat-checkbox [(ngModel)]="checked" color="primary">Include default incentives in payment calculation </mat-checkbox>
+                            </p>
+                           
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </div>
+           
+        </div>
+        
+    </mat-accordion>
+</div>

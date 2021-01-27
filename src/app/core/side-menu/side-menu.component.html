@@ -1,0 +1,21 @@
+<div href="" class="container-fluid text-secondary py-2 left-menu px-0 h-100 position-fixed bg-light mn" style="z-index:999; margin-top:64px;" [ngClass]="{'showLeftMenu':showMenu, 'hideLeftMenu':showMenu===false }">
+    <div class="clearfix pr-2">
+      <i style="color:#3f51b5" class="fas fa-times h3 float-right pointer" [hidden]="!showMenu" (click)="showMenu = false"></i>
+      <i style="color:#3f51b5" class="fas fa-bars h3 float-right pointer" [hidden]="showMenu" (click)="showMenu = true"></i>
+    </div>
+    <nav class="nav flex-column text-uppercase pb-3 navlists pl-3 d-block flex-fill pb-4 mainnav pb-5 bg-light" style="overflow-y:hidden;">
+      <div *ngFor ="let product of links" class="w-100 flex-column">
+        <div class="py-2 mb-0 pointer h6" (click)="toggleProduct(product)">
+          <i class="fas fa-angle-down mr-2" [hidden]="product.collapse ===true"></i>
+          <i class="fas fa-angle-up mr-2" [hidden]="product.collapse === false"></i>
+         <span class="side-menu-main-link"> {{product.name}}</span>
+        </div>
+        <div [hidden]="!product.collapse" class="pb-2">
+          <div class="">
+            <a [routerLink]="link.url" routerLinkActive="active" class="pt-1 pb-0 text-secondary d-block links" *ngFor="let link of product.links" (click)="showMenu = false">{{link.name}}</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  

@@ -1,0 +1,39 @@
+
+
+<div class="container custom-mat-tab-header">
+    <app-header [headerText]="headerText"></app-header>
+    <mat-accordion>
+        <div class="row mt-4">
+            <div class="col-12 custom-padding">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Taxes
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <div class="row">
+                        <div class="col-4">
+
+                            <p>Include by Default</p>
+
+                        </div>
+
+                        <div class="col-8">
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1" class="mr-5" [checked]="true" color="primary">Yes</mat-radio-button>
+                                <mat-radio-button value="2" class="mr-5" color="primary">No</mat-radio-button>
+                            </mat-radio-group>
+
+
+                        </div>
+                       
+                    </div>                 
+                </mat-expansion-panel>
+            </div>
+
+        </div>
+
+    </mat-accordion>   
+</div>

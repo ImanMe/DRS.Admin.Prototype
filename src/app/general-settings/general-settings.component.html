@@ -1,0 +1,200 @@
+
+
+<div class="container custom-mat-tab-header">
+    <app-header [headerText]="headerText"></app-header>
+    <mat-accordion>
+        <div class="row mt-4">
+            <div class="col-12 custom-padding">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Page Elements
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <div class="row">
+                        <div class="col-4">
+
+                            <p>Display "How it Works" Video</p>
+
+                        </div>
+
+                        <div class="col-4">
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1" class="mr-5" [checked]="true" color="primary">Yes</mat-radio-button>
+                                <mat-radio-button value="2" class="mr-5" color="primary">No</mat-radio-button>
+                            </mat-radio-group>
+
+
+                        </div>
+                        <div class="col-4">
+                            <a href="#">Watch (En)</a> |
+                            <a href="#">Watch (Fr)</a>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-4">
+
+                            <p>Display Header Text</p>
+
+                        </div>
+                        <div class="col-4">
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1" class="mr-5" color="primary">Yes</mat-radio-button>
+                                <mat-radio-button value="2" class="mr-5" color="primary" [checked]="true">No</mat-radio-button>
+                            </mat-radio-group>
+
+
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-4">
+
+                            <p>Header Text</p>
+
+                        </div>
+                        <div class="col-4">
+                            <mat-form-field class="example-full-width">
+                                <mat-label>English</mat-label>
+                                <textarea matInput placeholder=""></textarea>
+                            </mat-form-field>
+
+
+                        </div>
+                        <div class="col-4">
+                            <mat-form-field class="example-full-width">
+                                <mat-label>French</mat-label>
+                                <textarea matInput placeholder=""></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </div>
+
+        </div>
+
+    </mat-accordion>
+    <mat-accordion>
+        <div class="row mt-4">
+            <div class="col-12 custom-padding">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            FinanceDriver Buttons
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table  table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Order</th>
+                                        <th>Flow</th>
+                                        <th>Active</th>
+                                        <th>Caption - English</th>
+                                        <th>Caption - French</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="iconc">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">reorder
+                                            </mat-icon>
+                                        </td>
+                                        <td>Full</td>
+                                        <td>
+                                            <mat-checkbox color="primary" class="example-margin" [(ngModel)]="fullCh"></mat-checkbox>
+                                        </td>
+                                        <td><input class="form-control form-control-sm" value="Apply for credit" /></td>
+                                        <td><input class="form-control form-control-sm"
+                                                value="Applique pour le credit" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="iconc">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">reorder
+                                            </mat-icon>
+                                        </td>
+                                        <td>Prequal</td>
+                                        <td>
+                                            <mat-checkbox color="primary" class="example-margin" [(ngModel)]="preqCg"></mat-checkbox>
+                                        </td>
+                                        <td><input class="form-control form-control-sm" value="Get Prequalified" /></td>
+                                        <td><input class="form-control form-control-sm" value="Prequalifique" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="iconc">
+                                            <mat-icon aria-hidden="false" aria-label="Example home icon">reorder
+                                            </mat-icon>
+                                        </td>
+                                        <td>Basic</td>
+                                        <td>
+                                            <mat-checkbox color="primary" class="example-margin" [(ngModel)]="basicCh"></mat-checkbox>
+                                        </td>
+                                        <td><input class="form-control form-control-sm" value="Contact me" /></td>
+                                        <td><input class="form-control form-control-sm" value="Contacter moi" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </div>
+        </div>
+    </mat-accordion>
+
+
+    <mat-accordion>
+        <div class="row mt-4 mb-4">
+            <div class="col-12 custom-padding">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Lowest Payment Widget
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="row mt-2">
+                        <div class="col-4">
+
+                            <p>Display</p>
+
+                        </div>
+                        <div class="col-4">
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button color="primary" value="1" class="mr-5">Yes</mat-radio-button>
+                                <mat-radio-button color="primary" value="2" class="mr-5" [checked]="true">No</mat-radio-button>
+                            </mat-radio-group>
+
+
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-4">
+                            <p>Widget Label</p>
+                        </div>
+                        <div class="col-4">
+                            <mat-form-field class="example-full-width">
+                                <mat-label>English</mat-label>
+                                <input matInput placeholder="" value="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-4">
+                            <mat-form-field class="example-full-width">
+                                <mat-label>French</mat-label>
+                                <input matInput placeholder="" value="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                   
+                </mat-expansion-panel>
+            </div>
+
+        </div>
+
+    </mat-accordion>
+</div>

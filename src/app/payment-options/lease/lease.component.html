@@ -1,0 +1,107 @@
+<div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col-12 custom-padding">
+      <app-program-settings></app-program-settings>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12 custom-padding">
+      <app-program-preference></app-program-preference>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12 custom-padding">
+      <app-program-frequency></app-program-frequency>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12 custom-padding">
+      <app-incentive-handling></app-incentive-handling>
+    </div>
+  </div>
+
+
+  <mat-accordion>
+    <div class="row mt-4">
+      <div class="col-12 custom-padding">
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Calculation Settings
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-6">
+              <p>
+                <span class="badge bg-success">New</span>
+              </p>
+              <p>
+                <mat-checkbox class="" [(ngModel)]="checked91">MSRP Includes Freight & PDI
+                </mat-checkbox>
+              </p>
+            </div>
+            <div class="col-6">
+              <p>
+                <span class="badge bg-warning">Used</span>
+              </p>
+              <p>
+                <mat-checkbox class="" [(ngModel)]="checked91">MSRP Includes Freight & PDI
+                </mat-checkbox>
+              </p>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </div>
+    </div>
+  </mat-accordion>
+
+  <mat-accordion>
+    <div class="row mt-4 mb-4">
+      <div class="col-12 custom-padding">
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Security Deposit
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="row">
+            <div class="col-6">
+              <p>
+                <span class="badge bg-success">New</span>
+              </p>
+              <p>
+                <mat-checkbox [(ngModel)]="checked">Active </mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox [(ngModel)]="checked">Round payment up to the nearest 25 </mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox [(ngModel)]="checked">Match Payment </mat-checkbox>
+              </p>
+
+            </div>
+            <div class="col-6">
+              <p>
+                <span class="badge bg-warning">Used</span>
+              </p>
+              <p>
+                <mat-checkbox [(ngModel)]="checked">Active </mat-checkbox>
+              </p>
+
+              <p>
+                <mat-checkbox [(ngModel)]="checked">Round payment up to the nearest 25 </mat-checkbox>
+              </p>
+              <p>
+                <mat-checkbox [(ngModel)]="checked">Match Payment </mat-checkbox>
+              </p>
+
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </div>
+    </div>
+  </mat-accordion>
+</div>

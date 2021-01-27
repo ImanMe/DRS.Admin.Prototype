@@ -1,0 +1,41 @@
+<div class="container custom-mat-tab-header">
+    <app-header [headerText]="headerText"></app-header>
+    <mat-accordion>
+        <div class="row mt-4">
+            <div class="col-12 custom-padding">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Select Lenders
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <div class="row">
+                        <div class="col-6">
+                           
+                               <p class="ml-3"><span class="badge bg-success">New</span></p>
+                             
+                            <mat-selection-list #shoes>
+                                <mat-list-option *ngFor="let shoe of lenders1" color="primary">
+                                  {{shoe}}
+                                </mat-list-option>
+                              </mat-selection-list>
+                        </div>
+                        <div class="col-6">
+                           
+                                <p class="ml-3"><span class="badge bg-warning">Used</span></p>
+                             
+                            <mat-selection-list #shoes>
+                                <mat-list-option *ngFor="let shoe of lenders2" color="primary">
+                                  {{shoe}}
+                                </mat-list-option>
+                              </mat-selection-list>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </div>
+
+        </div>
+
+    </mat-accordion>

@@ -1,0 +1,53 @@
+<mat-accordion>
+   
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Program Preference 
+                    </mat-panel-title>                    
+                </mat-expansion-panel-header>
+                <div class="row">
+                    <div class="col-6">
+                       <p> <span class="badge bg-success">New</span></p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked1" color="primary">Manufacturer Special Program Rates
+                            </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked2" color="primary">Manufacturer Standard Program Rates
+                            </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked3" color="primary">Lender Standard Rate Programs </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked4" color="primary">Flat Rate </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked5" color="primary">Non-Prime </mat-checkbox>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p> <span class="badge bg-warning">Used</span></p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked6" color="primary">Manufacturer Special Program Rates
+                            </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked7" color="primary">Manufacturer Standard Program Rates
+                            </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked8" color="primary">Lender Standard Rate Programs </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked9" color="primary">Flat Rate </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked10" color="primary">Non-Prime </mat-checkbox>
+                        </p>
+                    </div>
+                </div>
+            </mat-expansion-panel>
+      
+</mat-accordion>

@@ -1,0 +1,82 @@
+<mat-accordion>
+    
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                [expanded]="true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Payment Frequencies
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="row">
+                    <div class="col-6">
+                        <p>
+                            <span class="badge bg-success">New</span>
+                            <span style="float:right;" class="mr-5"><small>(DEFAULT)</small></span>
+                        </p>
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked1" color="primary">Monthly </mat-checkbox>
+
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary" checked></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked2" color="primary">Semi-Monthly </mat-checkbox>
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary"></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked3" color="primary">Bi-Weekly </mat-checkbox>
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary"></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked4" color="primary">Weekly </mat-checkbox>
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary"></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <span class="badge bg-warning">Used</span>
+                            <span style="float:right;" class="mr-5"><small>(DEFAULT)</small></span>
+                        </p>
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked5" color="primary">Monthly </mat-checkbox>
+
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary" checked></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked6" color="primary">Semi-Monthly </mat-checkbox>
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary"></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked7" color="primary">Bi-Weekly </mat-checkbox>
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary"></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked8" color="primary">Weekly </mat-checkbox>
+                            <mat-radio-group aria-label="Select an option" style="float: right;" class="mr-5">
+                                <mat-radio-button value="1" color="primary"></mat-radio-button>
+                            </mat-radio-group>
+                        </p>
+                    </div>
+                </div>
+            </mat-expansion-panel>
+    
+</mat-accordion>

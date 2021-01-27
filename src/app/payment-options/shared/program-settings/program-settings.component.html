@@ -1,0 +1,83 @@
+<mat-accordion>
+    
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" [expanded]="true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Program Settings 
+                    </mat-panel-title>                    
+                </mat-expansion-panel-header>
+        
+                <div class="row">
+                    <div class="col-6">
+                        
+                           <p> <span class="badge bg-success">New</span></p>
+                         
+                          
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked" color="primary">Active </mat-checkbox>
+                        </p>
+                
+                        <p>
+                            <mat-form-field appearance="">
+                                <mat-label>Max. Term </mat-label>
+                                <input matInput #message maxlength="256" placeholder="">
+                                <mat-hint align="start"><strong>Months.</strong> </mat-hint>
+                            </mat-form-field>
+                        </p>
+                
+                        <p>
+                            <mat-form-field appearance="" class="mt-3">
+                                <mat-label>Reserve Adj </mat-label>
+                                <mat-select>
+                                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                                        {{food.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field appearance="">
+                                <mat-label>Default Down Payment </mat-label>
+                                <input matInput #message1 maxlength="256" placeholder="">
+                                <mat-hint align="start"><strong>$</strong> </mat-hint>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                  
+                    <div class="col-6">
+                       <p>  <span class="badge bg-warning">Used</span></p>
+                        <p>
+                            <mat-checkbox [(ngModel)]="checked1" color="primary">Active </mat-checkbox>
+                        </p>
+                
+                        <p>
+                            <mat-form-field appearance="">
+                                <mat-label>Max. Term </mat-label>
+                                <input matInput #message maxlength="256" placeholder="">
+                                <mat-hint align="start"><strong>Months.</strong> </mat-hint>
+                            </mat-form-field>
+                        </p>
+                
+                        <p>
+                            <mat-form-field appearance="" class="mt-3">
+                                <mat-label>Reserve Adj </mat-label>
+                                <mat-select>
+                                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                                        {{food.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field appearance="">
+                                <mat-label>Default Down Payment </mat-label>
+                                <input matInput #message1 maxlength="256" placeholder="">
+                                <mat-hint align="start"><strong>$</strong> </mat-hint>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                </div>
+            </mat-expansion-panel>
+      
+    
+</mat-accordion>

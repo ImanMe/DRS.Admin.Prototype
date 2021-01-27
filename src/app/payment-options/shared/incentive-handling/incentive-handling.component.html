@@ -1,0 +1,42 @@
+<mat-accordion>
+   
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                [expanded]="true">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Incentives Handling
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="row">
+                    <div class="col-6">
+                        <p>
+                            <span class="badge bg-success">New</span>
+                        </p>
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked1" color="primary">Include default incentives in payment
+                                calculation
+                            </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked2" color="primary">Show conditional incentives
+                            </mat-checkbox>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <span class="badge bg-warning">Used</span>
+                        </p>
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked3" color="primary">Include default incentives in payment
+                                calculation
+                            </mat-checkbox>
+                        </p>
+                        <p>
+                            <mat-checkbox class="" [(ngModel)]="checked4" color="primary">Show conditional incentives
+                            </mat-checkbox>
+                        </p>
+                    </div>
+                </div>
+            </mat-expansion-panel>
+       
+</mat-accordion>
