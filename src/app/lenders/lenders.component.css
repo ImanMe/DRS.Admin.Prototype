@@ -2,3 +2,8 @@
   margin: 0 auto !important;
   width: 80% !important;
 }
+
+
+.mat-list-base .mat-list-option {
+  font-size: 14px;
+}

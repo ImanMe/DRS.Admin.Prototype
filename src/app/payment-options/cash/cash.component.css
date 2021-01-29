@@ -1,0 +1,14 @@
+.mat-form-field+.mat-form-field {
+  margin-left: 8px;
+}
+
+.wrapper-container {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-padding {
+  padding: 1px !important;
+  margin: 0 !important;
+}
