@@ -9,10 +9,27 @@
         <!-- <span class="">Cox Automotive</span> -->
         <span class="ml-3">Dealertrack</span>
         <span class="example-spacer"></span>
-        <button mat-button>Dashboard</button>
+        <!-- <button mat-button>Dashboard</button>
         <button mat-button>Adminstration</button>
         <button mat-button>My Leads</button>
-        <button mat-button class="mr-2">Logout</button>
+        <button mat-button class="mr-2">Logout</button> -->
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="mt-3">
+          <button mat-menu-item disabled>
+            <mat-icon>dashboard</mat-icon>
+            <span>Dashboard</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>directions_car</mat-icon>
+            <span>Adminstartion</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>list</mat-icon>
+            <span>My Leads</span>
+          </button>
+        </mat-menu>
       </mat-toolbar>
     
 </div>
