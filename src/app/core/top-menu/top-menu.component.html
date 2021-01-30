@@ -1,35 +1,40 @@
 <div class="row">
-    <mat-toolbar color="primary" style="position: fixed; z-index: 10000;">
-        
-          <!-- mat-button (click)="drawer.toggle()"> -->
-          <!-- <mat-icon>menu</mat-icon> -->          
-          <!-- <img style="height: 42px; vertical-align: middle;
+  <mat-toolbar
+    color="primary"
+    style="position: fixed; z-index: 10000; margin-left: 0.75em"
+  >
+    <!-- mat-button (click)="drawer.toggle()"> -->
+    <!-- <mat-icon>menu</mat-icon> -->
+    <!-- <img style="height: 42px; vertical-align: middle;
           border-style: none; color:black" class="ml-2" src="https://banner2.cleanpng.com/20180510/auq/kisspng-dealertrack-holdings-inc-app-store-asr-pro-llc-5af4d8d9bad926.1211693415259957377653.jpg" alt=""> -->
-       
-        <!-- <span class="">Cox Automotive</span> -->
-        <span class="ml-3">Dealertrack</span>
-        <span class="example-spacer"></span>
-        <!-- <button mat-button>Dashboard</button>
+
+    <!-- <span class="">Cox Automotive</span> -->
+    <span class="ml-3">Dealertrack</span>
+    <span class="example-spacer"></span>
+    <!-- <button mat-button>Dashboard</button>
         <button mat-button>Adminstration</button>
         <button mat-button>My Leads</button>
         <button mat-button class="mr-2">Logout</button> -->
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu" class="mt-3">
-          <button mat-menu-item disabled>
-            <mat-icon>dashboard</mat-icon>
-            <span>Dashboard</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon>directions_car</mat-icon>
-            <span>Adminstartion</span>
-          </button>
-          <button mat-menu-item disabled>
-            <mat-icon>list</mat-icon>
-            <span>My Leads</span>
-          </button>
-        </mat-menu>
-      </mat-toolbar>
-    
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" class="mt-3">
+      <button mat-menu-item disabled>
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>directions_car</mat-icon>
+        <span>Adminstartion</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>list</mat-icon>
+        <span>My Leads</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
 </div>

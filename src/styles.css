@@ -1,25 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import '~@fortawesome/fontawesome-free/css/fontawesome';
-@import '~@fortawesome/fontawesome-free/css/v4-shims';
+@import "~@fortawesome/fontawesome-free/css/fontawesome";
+@import "~@fortawesome/fontawesome-free/css/v4-shims";
 @import "~@fortawesome/fontawesome-free/css/solid.css";
 @import "~@fortawesome/fontawesome-free/css/brands.css";
-
 
 .main {
   max-width: 1200px;
   width: 100%;
-  margin-left: 35px;
-  margin-right: 25px
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .pointer {
-  cursor: pointer
+  cursor: pointer;
 }
 
 a,
 .pointer {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .videoWrapper {
@@ -52,7 +51,7 @@ body {
 
 .table th,
 .table td {
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .error-message {
@@ -63,22 +62,19 @@ body {
 }
 
 .bg-success {
-  background-color: #00BFA5 !important;
+  background-color: #00bfa5 !important;
   color: white;
   padding: 5px 15px;
   border-radius: 2px;
 }
 
 .bg-warning {
-  background-color: #F57F17 !important;
+  background-color: #f57f17 !important;
   color: white;
   padding: 5px 15px;
   border-radius: 2px;
 }
 
-
-
-
 .docs-component-viewer-nav-content::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, .26);
+  background: rgba(0, 0, 0, 0.26);
 }
